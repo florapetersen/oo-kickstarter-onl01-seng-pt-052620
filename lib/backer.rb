@@ -6,8 +6,8 @@ class Backer
     @backed_projects = []
   end
 
-  def back_project(project) #accepts project as argument and stores in backers array
+  def back_project(project) #accepts project as argument and stores in backed_projects array
+    #
     @backed_projects << project
-    Project.backers << self
   end
 end
